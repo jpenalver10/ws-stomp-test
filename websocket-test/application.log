@@ -1,0 +1,25 @@
+20171020T11:45:50 JOAQUINPENALVER [restartedMain] INFO WebsocketApplication Starting WebsocketApplication on JOAQUINPENALVER with PID 3896 (C:\git\pruebas\websockets\bin started by jpenalver in C:\git\pruebas\websockets)
+20171020T11:45:50 JOAQUINPENALVER [restartedMain] DEBUG WebsocketApplication Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+20171020T11:45:50 JOAQUINPENALVER [restartedMain] INFO WebsocketApplication No active profile set, falling back to default profiles: default
+20171020T11:45:50 JOAQUINPENALVER [restartedMain] INFO AnnotationConfigApplicationContext Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@36e96df0: startup date [Fri Oct 20 13:45:50 CEST 2017]; root of context hierarchy
+20171020T11:45:51 JOAQUINPENALVER [restartedMain] INFO OptionalLiveReloadServer LiveReload server is running on port 35729
+20171020T11:45:51 JOAQUINPENALVER [restartedMain] INFO AnnotationMBeanExporter Registering beans for JMX exposure on startup
+20171020T11:45:51 JOAQUINPENALVER [restartedMain] INFO EndpointMBeanExporter Registering beans for JMX exposure on startup
+20171020T11:45:51 JOAQUINPENALVER [restartedMain] INFO DefaultLifecycleProcessor Starting beans in phase 0
+20171020T11:45:51 JOAQUINPENALVER [restartedMain] INFO EndpointMBeanExporter Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+20171020T11:45:51 JOAQUINPENALVER [restartedMain] INFO EndpointMBeanExporter Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+20171020T11:45:51 JOAQUINPENALVER [restartedMain] INFO EndpointMBeanExporter Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+20171020T11:45:51 JOAQUINPENALVER [restartedMain] INFO EndpointMBeanExporter Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+20171020T11:45:51 JOAQUINPENALVER [restartedMain] INFO EndpointMBeanExporter Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+20171020T11:45:52 JOAQUINPENALVER [restartedMain] INFO EndpointMBeanExporter Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+20171020T11:45:52 JOAQUINPENALVER [restartedMain] INFO EndpointMBeanExporter Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+20171020T11:45:52 JOAQUINPENALVER [restartedMain] INFO EndpointMBeanExporter Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+20171020T11:45:52 JOAQUINPENALVER [restartedMain] INFO EndpointMBeanExporter Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+20171020T11:45:52 JOAQUINPENALVER [restartedMain] INFO EndpointMBeanExporter Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+20171020T11:45:52 JOAQUINPENALVER [restartedMain] INFO EndpointMBeanExporter Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+20171020T11:45:52 JOAQUINPENALVER [restartedMain] INFO WebsocketApplication Started WebsocketApplication in 1.496 seconds (JVM running for 1.867)
+20171020T11:45:52 JOAQUINPENALVER [Thread-8] INFO AnnotationConfigApplicationContext Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@36e96df0: startup date [Fri Oct 20 13:45:50 CEST 2017]; root of context hierarchy
+20171020T11:45:52 JOAQUINPENALVER [Thread-8] INFO DefaultLifecycleProcessor Stopping beans in phase 0
+20171020T11:45:52 JOAQUINPENALVER [Thread-8] INFO EndpointMBeanExporter Unregistering JMX-exposed beans on shutdown
+20171020T11:45:52 JOAQUINPENALVER [Thread-8] INFO EndpointMBeanExporter Unregistering JMX-exposed beans
+20171020T11:45:52 JOAQUINPENALVER [Thread-8] INFO AnnotationMBeanExporter Unregistering JMX-exposed beans on shutdown

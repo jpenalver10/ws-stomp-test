@@ -1,0 +1,16 @@
+
+apply plugin: 'org.springframework.boot'
+
+
+springBoot {
+    mainClass = 'wtn.ws.WebsocketsApplication'
+}
+
+bootRun {
+
+    //systemProperty 'spring.profiles.active', 'dev'
+    //systemProperty  "logging.config", "/git/wtn-tools/logback/logback.xml"
+
+    jvmArgs '-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=2020'
+
+}

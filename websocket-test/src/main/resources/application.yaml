@@ -1,0 +1,5 @@
+spring:
+    devtools:
+        remote:
+            secret: dev
+            context-path: /private

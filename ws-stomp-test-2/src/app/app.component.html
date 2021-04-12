@@ -1,0 +1,19 @@
+<div style="text-align:center">
+  <h1>
+    {{title}}
+  </h1>
+</div>
+<h3>Subscribe to widgets</h3>
+<form (submit)="subscribe()">
+  <input type="text" name="message" [(ngModel)]="message" size="40">
+  <button type="submit">Subscribe</button>
+</form>
+<h3>Unsubscribe to widgets</h3>
+<form (submit)="unsubscribe()">
+  <input type="text" name="message" [(ngModel)]="message" size="40">
+  <button type="submit">Unsubscribe</button>
+</form>
+<h3>Responses</h3>
+<div *ngFor="let stompResponse of stompResponses">
+  {{stompResponse}}
+</div>

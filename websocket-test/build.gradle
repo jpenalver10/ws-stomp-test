@@ -1,0 +1,79 @@
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'groovy'
+apply plugin: 'org.springframework.boot'
+
+description = 'websockets pruebas'
+version = 1.0
+
+buildscript {
+    ext {
+        springBootVersion = '1.5.2.RELEASE'
+    }
+    repositories {
+        maven {
+            url 'https://plugins.gradle.org/m2/'
+        }
+        jcenter()
+    }
+    dependencies {        
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"        
+    }
+}
+
+repositories {    
+    maven {
+        name 'Nexus'
+        url "${nexusService}/repository/public/"
+    }
+    mavenLocal()
+    jcenter()
+}
+
+configure (project) {
+    jar {
+        manifest {
+            attributes("Implementation-Version": version)
+        }
+    }
+}
+
+configurations {
+    compile.exclude group: 'commons-logging'
+}
+
+task sourcesJar(type: Jar, dependsOn: classes) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+artifacts {
+    archives sourcesJar
+    archives javadocJar
+}
+
+springBoot {
+    mainClass = 'wtn.websocket.WebsocketApplication'
+}
+
+bootRun {
+    jvmArgs '-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=2020'
+}
+
+dependencies {
+
+    compile 'org.springframework.boot:spring-boot-starter-websocket'
+    //compile 'org.springframework.boot:spring-boot-starter-web'
+    compile 'org.springframework.boot:spring-boot-starter-logging'
+    compile 'org.springframework.boot:spring-boot-starter-actuator'
+    compile 'org.springframework.boot:spring-boot-devtools'
+
+    testCompile 'org.springframework.boot:spring-boot-starter-test'
+}
